@@ -1,7 +1,7 @@
 EAPI=4
 
 EGIT_BRANCH="4.4-cros_r59"
-EGIT_REPO_URI="https://github.com/FydeOS/kernel-tinkerboard.git"
+EGIT_REPO_URI="https://github.com/coherixmatts/kernel-tinkerboard.git"
 
 # This must be inherited *after* EGIT/CROS_WORKON variables defined
 inherit git-2 cros-workon cros-kernel2
