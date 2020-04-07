@@ -8,5 +8,5 @@ The code and document in this repository is the result of work by Matt and previ
 # How to build it
 
 Please refer to the README in the [Chromium OS for Raspberry Pi](https://github.com/FydeOS/chromium_os_for_raspberry_pi) repo for how to setup and build Chromium OS. The instructions there are not completely relevant for Tinker Board, but I managed to build this on Ubuntu 16.04 LTS installing to ~/project instead of /project (due to errors with permissions doing it exactly as written).  
-Reminder 1: Edit `~/trunk/src/third_party/chromiumos-overlay/eclass/cros-board.eclass` and add `tinker` to the list. 
-Reminder 2: Build packages in chroot with --nousepkg
+Reminder 1: Run cros_sdk --replace when first setting up the chroot to avoid some access violation errors in depot_tools during build_packages
+Reminder 2: Edit `~/trunk/src/third_party/chromiumos-overlay/eclass/cros-board.eclass` and add `tinker` to the list.
