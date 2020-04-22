@@ -28,7 +28,7 @@ src_configure() {
 
 src_compile() {
 	export ARCH=arm
-	export CROSS_COMPILE=armv7a-cros-linux-gnueabi-
+	export CROSS_COMPILE=armv7a-cros-linux-gnueabihf-
 	emake
 	./tools/mkimage -n rk3288 -T rksd -d spl/u-boot-spl-dtb.bin tinker-uboot.img
 	cat u-boot-dtb.bin >> tinker-uboot.img
