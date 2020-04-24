@@ -11,3 +11,4 @@ Please refer to the README in the [Chromium OS for Raspberry Pi](https://github.
 Reminder 1: Edit `~/trunk/src/third_party/chromiumos-overlay/eclass/cros-board.eclass` and add `tinker` to the list.
 Reminder 2: There are problems with some of the licenses in the linux-firmware folder. Just accepting all licenses * for now.
 Reminder 3: missing chromeos-config-bsp needed for R80. borowed from RPI.
+Reminder 4: UBoot doesn't compile with CROS v80 using armv7a-cros-linux-gnueabihf, so inside chroot must 'crossdev --stable armv7a-cros-linux-gnueabi'
