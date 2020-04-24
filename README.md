@@ -1,3 +1,5 @@
+# DO NOT USE, this is not finished/work-in-progress
+
 # About this repository
 
 This repository is the Chromium OS board overlay for the [Asus Tinkerboard single board computer](https://www.asus.com/us/Single-Board-Computer/Tinker-Board/).
